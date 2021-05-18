@@ -10,8 +10,7 @@ inputPath = os.path.join(root, 'inputGDB')
 date = datetime.now()
 print(f'Run Date: {date.strftime("%m/%d/%Y")}')
 print('------------------')
-# start, end = str(date.strftime('%Y-%m-%d')) + ' 00:00:00', str(date.strftime('%Y-%m-%d')) + ' 23:59:00'
-start, end  = '2021-05-12 00:00:00', '2021-05-12 23:59:00'
+start, end = str(date.strftime('%Y-%m-%d')) + ' 00:00:00', str(date.strftime('%Y-%m-%d')) + ' 23:59:00'
 output = os.path.join(root, 'output')
 genName = 'RDOF_FieldTracker'
 gdb = os.path.join(inputPath, genName + '.gdb')
@@ -27,6 +26,6 @@ countDict = {}
 userList = []
 userListTot =[]
 # Initialize xl
-writer = pd.ExcelWriter(os.path.join(output, 'Fielders_Point_Counts_{}.xlsx').format('05122021')) #format(date.strftime('%m%d%Y')))
+writer = pd.ExcelWriter(os.path.join(output, 'Fielders_Point_Counts_{}.xlsx').format(date.strftime('%m%d%Y')))
 
 
