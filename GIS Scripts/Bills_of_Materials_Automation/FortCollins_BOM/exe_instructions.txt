@@ -1,0 +1,5 @@
+Step 1: cd\
+Step 2: cd python27
+Step 3: cd ArcGIS10.7/ ArcGIS10.4
+Step 4: python.exe "path to setup.py" py2exe
+(Example: python.exe C:\Users\MounicaMotipalli\Desktop\Austin_Splicesheet\setup.py py2exe)
